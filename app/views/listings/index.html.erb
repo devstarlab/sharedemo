@@ -6,9 +6,9 @@
 
   <div class="row">
     <% @listings.each do |listing| %>
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-3 col-sm-6">
         <div class="thumbnail">
-        
+        <%= image_tag listing.image.url(:medium) %>
         <div class="caption text-center">
         <h3><%= listing.name %></h3>
         <p><%= number_to_currency(listing.price) %></p>
