@@ -1,4 +1,5 @@
-<%= form_for @listing, :html => { :multipart => true } do |f| %>
+<div class="container">
+  <%= form_for @listing, :html => { :multipart => true } do |f| %>
   <% if @listing.errors.any? %>
     <div class="alert alert-danger alert-dismissable" id="error_explanation">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -32,3 +33,5 @@
     <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>
+</div>
+

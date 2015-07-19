@@ -1,6 +1,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.jumbotron { 
+  background-image: url('red.png');
+  background-size: cover; 
+  background-position: center bottom;
+  height: 400px;
+}
+
+.jumbotron {
+  h1 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  h2 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+
+.container-fluid { padding: 0px;}
+
+.navbar-default { margin-bottom: 0;}
+
 .navbar-default .navbar-brand {
   font-family: guardian-egyptt, georgia, serif;
   font-weight: 400;

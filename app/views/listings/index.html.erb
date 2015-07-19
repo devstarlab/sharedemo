@@ -1,24 +1,31 @@
-<h1>Listings</h1>
 
-<% if user_signed_in? %>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Header for Home Page Banner</h1>
+    <h2>Sub heading for home page.</h2>
+  </div>
+</div>
+<div class="container">
+  <h1>Listings</h1>
+
+  <% if user_signed_in? %>
   <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
-<% end %>
+  <% end %>
 
-<br>
+  <br>
 
   <div class="row">
     <% @listings.each do |listing| %>
-      <div class="col-md-3">
-        <div class="thumbnail">
+    <div class="col-md-3">
+      <div class="thumbnail">
         <%= link_to image_tag(listing.image.url(:medium)), listing %>
         <div class="caption text-center">
-        <h3><%= listing.name %></h3>
-        <p><%= number_to_currency(listing.price) %></p>
-        <p><%= "Sold by #{listing.user.name}" %></p>
+          <h3><%= listing.name %></h3>
+          <p><%= number_to_currency(listing.price) %></p>
+          <p><%= "Sold by #{listing.user.name}" %></p>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
     <% end %>
   </div>
-
-<br>
+</div>
