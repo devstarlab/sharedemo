@@ -1,0 +1,55 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.jumbotron { 
+  background-image: url('https://dl.dropboxusercontent.com/s/btdqvxs3e5tcluc/red.png?dl=0');
+  background-size: cover; 
+  background-position: center bottom;
+  height: 400px;
+}
+
+.jumbotron {
+  h1 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  h2 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+
+.container-fluid { padding: 0px;}
+
+.navbar-default { margin-bottom: 0;}
+
+.navbar-default .navbar-brand {
+  font-family: guardian-egyptt, georgia, serif;
+  font-weight: 400;
+  color: #d5641c;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0192B5;
+}
+
+.col-md-3:nth-child(4n+1) {
+  clear: left;
+}
+
+.col-md-9 {
+  h3 {
+    font-size: 45px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
