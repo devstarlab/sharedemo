@@ -16,13 +16,22 @@
 
   <div class="row">
     <% @listings.each do |listing| %>
+<<<<<<< HEAD
     <div class="col-md-3 col-sm-4">
       <div class="thumbnail" data-mh="listings">
+=======
+    <div class="col-md-3">
+      <div class="thumbnail">
+>>>>>>> cc08a7159a10574456274d0f7004051b9c917efd
         <%= link_to image_tag(listing.image.url(:medium)), listing %>
         <div class="caption text-center">
           <h3><%= listing.name %></h3>
           <p><%= number_to_currency(listing.price) %></p>
+<<<<<<< HEAD
           <p><%= "Sold By #{listing.user.name}" %></p>
+=======
+          <p><%= "Sold by #{listing.user.name}" %></p>
+>>>>>>> cc08a7159a10574456274d0f7004051b9c917efd
         </div>
       </div>
     </div>

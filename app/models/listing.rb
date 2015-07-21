@@ -13,5 +13,8 @@ class Listing < ActiveRecord::Base
 					validates_attachment_presence :image
 
 					belongs_to :user
+<<<<<<< HEAD
 					has_many :orders
+=======
+>>>>>>> cc08a7159a10574456274d0f7004051b9c917efd
 end

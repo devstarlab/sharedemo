@@ -12,7 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
 //= require jquery.matchHeight
+=======
+>>>>>>> cc08a7159a10574456274d0f7004051b9c917efd
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
